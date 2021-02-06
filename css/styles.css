@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  background-color: hsl(0, 0%, 98%);
+  padding: 5%;
+  height: 120vh;
+}
+
+/*============== Header *********/
+.head {
+  text-align: center;
+  width: 40%;
+  margin: 0px auto;
+}
+
+.head h1 {
+  color: hsl(234, 12%, 34%);
+  font-weight: 200;
+  font-size: 28px;
+}
+
+.head h2 {
+  color: hsl(234, 12%, 34%);
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.head p {
+  color: hsl(229, 6%, 66%);
+  font-size: 13px;
+}
+
+
+
+/**************** Section 2 Classes************************/
+
+.cards {
+  padding-top: 50px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  align-items: center;
+}
+
+.mid-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 230px;
+  width: 320px;
+  background-color: white;
+  border: none;
+  border-top: 3px solid;
+  box-shadow: 0 3px 10px -5px grey;
+  padding: 15px 30px 20px 30px;
+  border-radius: 10px;
+}
+
+.container h3 {
+  color: hsl(234, 12%, 34%);
+  margin: 10px 0;
+}
+
+.container p {
+  font-size: 13px;
+  color: hsl(229, 6%, 66%);
+}
+
+.image {
+  align-self: flex-end;
+}
+
+#karma {
+  border-color: orange;
+}
+
+#calculator {
+  border-color: blue;
+
+}
+
+#team-builder {
+  border-color: red;
+  margin-bottom: 20px;
+}
+
+#supervisor {
+  border-color: hsl(180, 62%, 55%);
+  justify-self: end;
+}
+
+
+
+@media (max-width:1122px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #supervisor,
+  #karma {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width:947px) {
+  .head {
+    width: 60%;
+  }
+}
+
+@media (max-width:947px) {
+  .head {
+    width: 90%;
+  }
+}
